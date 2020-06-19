@@ -40,6 +40,19 @@ Here, @IP_Client_Adress is my nagios client IP address. Finally restart nagios s
 ```shell
 systemctl restart nagios
 ```
+Change the email address associated with the nagiosadmin contact definition to the address you’d like to use for receiving alerts : 
+```shell
+vi /usr/local/nagios/etc/objects/contacts.cfg
+```
+```shell
+define contact{
+        contact_name                    nagiosadmin             ; Short name of user
+        use                             generic-contact         ; Inherit default values from generic-contact template (defined above)
+        alias                           Nagios Admin            ; Full name of user
+
+        email                           Your@Mail.com  ; <<***** CHANGE THIS TO YOUR EMAIL ADDRESS ******
+        }
+```
 # Client Side
 Edit /etc/nagios/nrpe.cfg file,
 ```shell
