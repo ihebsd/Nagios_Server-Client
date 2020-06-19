@@ -4,7 +4,9 @@ Configuration of Nagios Server &amp; Client Centos 7
 ### :speech_balloon: Introduction
 Nagios is an application for system and network monitoring. It monitors the specified hosts and services, alerting when systems have malfunctions and when they return to normal operation. It is free software under the GPL license.
 
-Create config file to the client to be monitored:
+## :gear: Configuration 
+
+Modify config file to the client to be monitored:
 
 ```shell
 $ vi /usr/local/nagios/etc/servers/clients.cfg
@@ -37,8 +39,16 @@ Here, @IP_Client_Adress is my nagios client IP address. Finally restart nagios s
 ```shell
 systemctl restart nagios
 ```
-## :gear: Configuration 
+Edit /etc/nagios/nrpe.cfg file,
+```shell
+sudo vi /etc/nagios/nrpe.cfg
+```
+Add your Nagios server ip address:
 
+[...]
+## Find the following line and add the Nagios server IP ##
+allowed_hosts=127.0.0.1 192.168.1.150
+[...]
 #### Reviewing the prediction results :sparkles:	
 <p align="center">
   <img src="https://user-images.githubusercontent.com/47121168/85165507-3d1de880-b266-11ea-85dd-fd9f091cf856.PNG" width="400"/> 
