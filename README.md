@@ -45,12 +45,12 @@ sudo vi /etc/nagios/nrpe.cfg
 ```
 Add your Nagios server ip address:
 
-## Find the following line and add the Nagios server IP ##
+Find the following line and add the Nagios server IP
 ```shell
 allowed_hosts=127.0.0.1 @IP_Nagios_Server
 ```
 
-#### Reviewing the prediction results :sparkles:	
+### Reviewing the prediction results :sparkles:	
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/47121168/85165507-3d1de880-b266-11ea-85dd-fd9f091cf856.PNG" width="400"/> 
+  <img src="https://user-images.githubusercontent.com/47121168/85165507-3d1de880-b266-11ea-85dd-fd9f091cf856.PNG" width="600"/> 
 </p>
