@@ -6,6 +6,7 @@ Nagios is an application for system and network monitoring. It monitors the spec
 
 ## :gear: Configuration 
 
+# Server Side
 Modify config file to the client to be monitored:
 
 ```shell
@@ -39,6 +40,7 @@ Here, @IP_Client_Adress is my nagios client IP address. Finally restart nagios s
 ```shell
 systemctl restart nagios
 ```
+# Client Side
 Edit /etc/nagios/nrpe.cfg file,
 ```shell
 sudo vi /etc/nagios/nrpe.cfg
