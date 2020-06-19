@@ -10,6 +10,7 @@ Create config file to the client to be monitored:
 $ vi /usr/local/nagios/etc/servers/clients.cfg
 ``
 Add the following lines:
+
 ``shell
 define host{
 
