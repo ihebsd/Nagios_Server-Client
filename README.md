@@ -6,12 +6,12 @@ Nagios is an application for system and network monitoring. It monitors the spec
 
 Create config file to the client to be monitored:
 
-``shell
+```shell
 $ vi /usr/local/nagios/etc/servers/clients.cfg
-``
+```
 Add the following lines:
 
-``shell
+```shell
 define host{
 
 use                             linux-server
@@ -31,12 +31,12 @@ notification_interval           30
 notification_period             24x7
 
 }
-``
+```
 Here, @IP_Client_Adress is my nagios client IP address. Finally restart nagios service.
 
-``shell
+```shell
 systemctl restart nagios
-``
+```
 ## :gear: Configuration 
 
 #### Reviewing the prediction results :sparkles:	
