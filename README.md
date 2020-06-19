@@ -53,6 +53,7 @@ define contact{
         email                           Your@Mail.com  ; <<***** CHANGE THIS TO YOUR EMAIL ADDRESS ******
         }
 ```
+
 # Client Side
 Edit /etc/nagios/nrpe.cfg file,
 ```shell
@@ -67,5 +68,5 @@ allowed_hosts=127.0.0.1 @IP_Nagios_Server
 
 ### Reviewing the prediction results :sparkles:	
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/47121168/85165507-3d1de880-b266-11ea-85dd-fd9f091cf856.PNG" width="600"/> 
+  <img src="https://user-images.githubusercontent.com/47121168/85165507-3d1de880-b266-11ea-85dd-fd9f091cf856.PNG" width="750"/> 
 </p>
